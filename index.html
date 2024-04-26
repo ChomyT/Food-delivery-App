@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food delivery Landing Page</title>
+  <link rel="styelesheet" href="style.css">
+  <style>
+    .header__region{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: none;
+      color: black;
+      align-items: right;
+      width: 100%;
+
+    }
+    nav{
+      display: none;
+      flex-direction: row;
+      justify-items: space-between;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #bce4bc;
+     
+
+    }
+    li{
+      font-family:  sans-serif;
+      font-size: 13px;
+      list-style: none;
+      padding: 15px 20px;
+      align-items: right;
+     
+    }
+    .Hero__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+    }
+    #logo{
+      margin: 25px auto;
+      padding-left: 10px;
+    }
+    .heading__button{
+  display: block;
+  padding: 10px 20px;
+  background-color: #FF8E19;
+  border-radius: 10px;
+  border: none;
+  color: black;
+      }
+      .hero-image{
+        width: 100%;
+      }
+      .heroimage{
+        display: block;
+        min-width: 100%;
+        height: 300px;
+        padding-left: 40px;
+        margin: 5px auto;
+        overflow-x: hidden;
+       
+
+              }
+              section{
+                width: 100%;
+              }
+      .review__section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-width: 100%;
+
+      }
+
+      .review__heading{
+        text-align: center;
+      }
+      .review__paragraph{
+        width: 100%;
+        align-items: center;
+      }
+      .body__image{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 5px;
+      }
+      .b__image{
+        padding: 10px 5px;
+        width: 100%;
+      }
+      .review__paragraph{
+      padding-left: 5px;
+      }
+      footer{
+        background-color: #11B20D;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+
+      }
+      .heading__button{
+        display: block;
+  padding: 10px 40px;
+  background-color: #FF8E19;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin: 15px auto; 
+      }
+      .heading-button1{
+        display: block;
+  padding: 10px 30px;
+  background-color:#11B20D;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin: 15px auto;
+      }
+.nav-button{
+  background-color: #FF8E19;
+  padding: 10px 40px;
+  display: block;
+  padding: 10px 20px;
+  background-color: #FF8E19;
+  border-radius: 10px;
+  border: none;
+  color: black;
+}
+#nav-button1{
+  background-color: none;
+  display: block;
+  padding: 10px 20px;
+  background-color: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  
+}
+.hamburger{
+  display: block;
+  padding-top: 40px;
+  padding-right: 25px;
+  font-weight: bolder;
+}
+      
+  </style>
+</head>
+<body>
+  
+<!--Cloud-->
+
+<section class="header__region">
+  <div><img src="logo.png" id="logo"></div>
+  <nav id="mobile">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><button class="nav-button">login</button></li>
+        <li><button id="nav-button1">login</button></li>
+      </ul>
+      </nav>
+      <div class="hamburger" id="hamburger" onclick="myFunction()"><span>&#9776;</span></div>
+      </section>
+      <section class="Hero__section">
+      <div class="header__item">
+      <h1>FROM ORDER TO <br>DOORSTEP IN MINUTES </h1>
+      <p>In Bytechops you order food to feed your hunger, and nourish your soul </p>        
+      <button class="heading__button">Order Now</button>
+      <button class="heading-button1">Watch videos now</button>
+     
+      <div class="hero-image">
+        <img src="heroimage.png" class="heroimage">
+        </div>
+      </div>
+      
+     </section>                
+          <section class="review">
+            <h2 class="review__heading">Review</h2>
+            <div class="review__section">
+              <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors 
+                  to create visually appealing designs that stand out.</p>
+              <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
+                    to create visually appealing designs that stand out.</p>
+                    <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
+                    to create visually appealing designs that stand out.</p>
+                  </div>
+            
+          </section>
+          <section class="body__image">
+            <img src="image3.jpeg" class="b__image">
+            <img src="image4.jpeg" class="b__image">
+            <img src="image5.jpeg" class="b__image">
+            <img src="Image2.jpeg" class="b__image">
+          </section>
+      <footer class="footer">
+        <div><img src="logo.png" id="logo"></div>
+        <div class="paragrph">
+          <p>4340</p>
+          <p>5/5</p>
+          
+        </div>
+        <div class="paragrph">
+          <p>See review</p>
+          <p>Contact Us</p>
+          <p>About Us</p>
+        </div>
+        <class="paragraph">
+          <p>Featured Product</p>
+          <p>Order Now</p>
+          <p>Featured Product</p>
+        </class>
+  <div class="container grid grid-3">
+
+  </div>
+    </nav>
+    <div class="social">
+      <a href="#"></a><i class="fab fa-github fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+    <p>FROM ORDER TO</p>
+    <p>Copyright &copy; 2023</p>
+    </div>
+    <nav>
+</footer>
+
+</body>
+</html>
+  </div>
+</body>
+</html>
