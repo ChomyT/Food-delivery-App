@@ -7,6 +7,9 @@
   <title>Food delivery Landing Page</title>
   <link rel="styelesheet" href="style.css">
   <style>
+    body{
+      background-color: #ffffff;
+    }
     .header__region{
       display: flex;
       flex-direction: row;
@@ -47,7 +50,7 @@
       padding-top: 10px;
     }
     #logo{
-      margin: 25px auto;
+      margin: 35px auto;
       padding-left: 10px;
     }
     .heading__button{
@@ -63,8 +66,7 @@
       }
       .heroimage{
         display: block;
-        min-width: 100%;
-        height: 300px;
+        height: 200px;
         padding-left: 40px;
         margin: 5px auto;
         overflow-x: hidden;
@@ -93,10 +95,13 @@
         display: flex;
         flex-direction: column;
         padding: 15px 5px;
+        width: 100%;
       }
       .b__image{
-        padding: 10px 5px;
+        
         width: 100%;
+        border-radius:30px;
+        
       }
       .review__paragraph{
       padding-left: 5px;
@@ -116,7 +121,7 @@
       .heading__button{
         display: block;
   padding: 10px 40px;
-  background-color: #FF8E19;
+  background-color: #EEAF0B;
   border-radius: 10px;
   border: none;
   color: black;
@@ -125,10 +130,10 @@
       .heading-button1{
         display: block;
   padding: 10px 30px;
-  background-color:#11B20D;
+  background-color:#ffffff;
   border-radius: 10px;
-  border: none;
-  color: black;
+  border: 1px solid;
+    color: black;
   margin: 15px auto;
       }
 .nav-button{
@@ -157,7 +162,75 @@
   padding-right: 25px;
   font-weight: bolder;
 }
-      
+.span{
+ color:#EEAF0B;
+} 
+.recipe{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around; 
+}  
+.recipe-button{
+  background-color: #EED5BA;
+  border: none;
+  border-radius:15px;
+  padding: 7px 15px;
+}
+.card1{
+  background-color: #F1EBE5;
+  margin: 10px;
+}
+.recipe-btn{
+background-color: #FDC124;
+padding: 10px 40px;
+border-radius: 15px;
+border: none;
+font-weight: bolder;
+margin-left: 15px;
+margin-bottom: 15px;
+}
+.card-heading{
+  text-align:center;
+  font-size: 1.5rem;
+}
+.recipe-heading, 
+.recipe-paragraph,
+.card-paragraph{
+  text-align: left;
+  padding: 0px 10px;
+}
+.card-paragraph{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.benefit{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2{
+  background-color: #FCFCF1;
+  margin: 10px 3px;
+}
+.card2__paragraph{
+  padding: 0px 20px;
+}
+.ellipse{
+  width: 25px;
+  height: 25px;
+  padding-top: 5px
+}
+.review__para{
+  background-color:  #EED5BA;
+  margin-bottom: 10px;
+  
+  
+}
+
   </style>
 </head>
 <body>
@@ -165,7 +238,7 @@
 <!--Cloud-->
 
 <section class="header__region">
-  <div><img src="logo.png" id="logo"></div>
+  <div><img src="images/logo.png" id="logo"></div>
   <nav id="mobile">
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -177,39 +250,92 @@
         <li><button id="nav-button1">login</button></li>
       </ul>
       </nav>
-      <div class="hamburger" id="hamburger" onclick="myFunction()"><span>&#9776;</span></div>
+      <div class="hamburger" id="hamburger"><span>&#9776;</span></div>
       </section>
       <section class="Hero__section">
+
+        <div class="hero-image">
+          <img src="images/fastest-delivery.png" class="heroimage">
+          </div>
       <div class="header__item">
-      <h1>FROM ORDER TO <br>DOORSTEP IN MINUTES </h1>
+      <h1>FROM <span class="span">ORDER</span> TO <br><span class="span">DOORSTEP</span> IN MINUTES </h1>
       <p>In Bytechops you order food to feed your hunger, and nourish your soul </p>        
       <button class="heading__button">Order Now</button>
-      <button class="heading-button1">Watch videos now</button>
+      <button class="heading-button1">How To Order</button>
      
-      <div class="hero-image">
-        <img src="heroimage.png" class="heroimage">
-        </div>
+      
       </div>
       
-     </section>                
-          <section class="review">
-            <h2 class="review__heading">Review</h2>
-            <div class="review__section">
-              <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors 
-                  to create visually appealing designs that stand out.</p>
-              <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
-                    to create visually appealing designs that stand out.</p>
-                    <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
-                    to create visually appealing designs that stand out.</p>
-                  </div>
+              </section>
+              <section>
+          <h1 class="recipe-heading">Our Popular Recipes</h1>
+          <p class="recipe-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+          <div class="body__image">
+            <div class="card1">
+            <div><img src="images/Image2.jpeg" class="b__image"></div>
+            <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
+              <h4 class="card-heading">Okro Soup and Ogbono</h4>
+              <p class="card-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+              <button class="recipe-btn">Order Now</button>
+                </div>
+                <div class="card1">
+                  <div><img src="images/Image2.jpeg" class="b__image"></div>
+                  <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
+                    <h4 class="card-heading">Okro Soup and Ogbono</h4>
+                    <p>You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+                    <button class="recipe-btn">Order Now</button>
+                      </div>
+                      <div class="card1">
+          <img src="images/image5.jpeg" class="b__image">
+          <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
+          <h4 class="card-heading">Okro Soup and Ogbono</h4>
+          <p>You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+          <button class="recipe-btn">Order Now</button>
+        </div>
+
+        <div>
+          <h2>Order delivery in just <br>30 minutes</h2>
+          <p class="card2__paragraph">We deliver delicacies withing the shortest possible time. What are your waiting for. place your order now</p>
+          <div class="benefit">
+          <div class="card2">
+            <img src="images/Ellipse 12.png" class="ellipse">
+            <h4>Easy To Order</h4>
+            <p class="card2__paragraph">We deliver delicacies withing the shortest possible time. What are your waiting for. place your order now</p>
+          </div>
+          
+            <div class="card2">
+              <img src="images/Ellipse 12.png" class="ellipse">
+              <h4>Delicious Food</h4>
+              <p class="card2__paragraph">We deliver delicacies withing the shortest possible time. What are your waiting for. place your order now</p>
+            </div>
             
-          </section>
-          <section class="body__image">
-            <img src="image3.jpeg" class="b__image">
-            <img src="image4.jpeg" class="b__image">
-            <img src="image5.jpeg" class="b__image">
-            <img src="Image2.jpeg" class="b__image">
-          </section>
+              <div class="card2">
+                <img src="images/Ellipse 12.png" class="ellipse">
+                <h4>Fastest Delivery</h4>
+                <p>We deliver delicacies withing the shortest possible time. What are your waiting for. place your order now</p>
+              </div>
+        </div>
+        </div>
+         </div>
+          
+          </section>                
+        <section class="review">
+          <h2 class="review__heading">Review</h2>
+          <div class="review__section">
+            <div class="review__para">
+            <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors 
+                to create visually appealing designs that stand out.</p>
+                </div>
+                <div class="review__para">
+            <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
+                  to create visually appealing designs that stand out.</p>
+                  </div>
+                  <div class="review__para">
+                  <p class="review__paragraph">attention to the logo. It can be paired with complementary colors such as white, black, or other accent colors
+                  to create visually appealing designs that stand out.</p>
+                </div>
+                </div>
+          
       <footer class="footer">
         <div><img src="logo.png" id="logo"></div>
         <div class="paragrph">
