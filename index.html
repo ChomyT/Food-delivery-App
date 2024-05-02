@@ -20,7 +20,7 @@
       width: 100%;
 
     }
-    nav{
+    #mobile{
       display: none;
       flex-direction: row;
       justify-items: space-between;
@@ -243,6 +243,55 @@ h4, h2{
 h1{
   font-size: 2rem;
 }
+
+@media only screen and (min-width: 768px){
+    #mobile{
+      display: none;
+    }
+  #desktop{
+    display: flex;
+    justify-content: space-between;
+  }  
+  ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #ffffff; 
+
+    }
+    #hamburger{
+      display: none;
+    }
+    #header__region{
+      display: flex;
+
+    }
+    #logo{
+      margin: 35px auto;
+      padding-left: 10px;
+    }
+    .Hero__section{
+      flex-direction: row;
+      width: 100%;
+    }
+    .b__image{
+        
+        width: 50%;
+        border-radius:30px;
+        
+      }
+      .hero-image{
+        width: 40%;
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+      }
+      .{
+        flex-direction: row;
+        width: 30%;
+      }
+}
   </style>
 </head>
 <body>
@@ -258,14 +307,26 @@ h1{
         <li><a href="ContactUs.html">Contact Us</a></li>
         <li><a href="Services.html">Services</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><button class="nav-button">login</button></li>
-        <li><button id="nav-button1">login</button></li>
+        <li><button class="nav-button">Login</button></li>
+        <li><button id="nav-button1">Sign-up</button></li>
       </ul>
       </nav>
+      <nav id="desktop">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <div class="buttons">
+            <li><button class="nav-button">login</button></li>
+            <li><button id="nav-button1">Sign-up</button></li>
+            </div>
+          </ul>
+          </nav>
       <div class="hamburger" id="hamburger"><span>&#9776;</span></div>
       </section>
       <section class="Hero__section">
-
         <div class="hero-image">
           <img src="images/fastest-delivery.png" class="heroimage">
           </div>
