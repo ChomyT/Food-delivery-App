@@ -1,0 +1,341 @@
+
+    body{
+      background-color: #ffffff;
+    }
+    .header__region{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: none;
+      color: black;
+      align-items: right;
+      width: 100%;
+
+    }
+    #mobile{
+      display: none;
+      flex-direction: row;
+      justify-items: space-between;
+     
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #bce4bc;
+      width: 100%;
+      
+    }
+   #mobile > ul > li{
+      font-family:  sans-serif;
+      font-size: 13px;
+      list-style-type: none;
+      padding: 15px 20px;
+      align-items: right;
+     
+  }
+  a{
+    text-decoration: none;
+    color: #FF8E19; 
+  }
+    .hero__section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+    }
+    #logo{
+      margin: 35px auto;
+      padding-left: 10px;
+    }
+    .heading__button{
+  display: block;
+  padding: 10px 20px;
+  background-color: #FF8E19;
+  border-radius: 10px;
+  border: none;
+  color: black;
+      }
+      .hero-image{
+        width: 100%;
+      }
+      .heroimage{
+        display: block;
+        height: 200px;
+        padding-left: 40px;
+        margin: 5px auto;
+        overflow-x: hidden;
+       
+
+              }
+              section{
+                width: 100%;
+              }
+      .review__section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-width: 100%;
+
+      }
+
+      .review__heading{
+        text-align: center;
+      }
+      .review__paragraph{
+        width: 100%;
+        align-items: center;
+      }
+      .body__image{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 5px;
+        width: 100%;
+      }
+      .card1{
+        width:100%;
+      }
+      .order__heading{
+        text-align: center;
+      }
+      .b__image{
+        
+        width: 100%;
+        border-radius:30px;
+        
+      }
+      .review__paragraph{
+      padding-left: 5px;
+      }
+      footer{
+        background-color: #FDC124;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+
+      }
+      .heading__button{
+        display: block;
+  padding: 10px 40px;
+  background-color: #EEAF0B;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin: 15px auto; 
+      }
+      .heading-button1{
+        display: block;
+  padding: 10px 30px;
+  background-color:#ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+    color: black;
+  margin: 15px auto;
+      }
+.nav-button{
+  
+  padding: 10px 40px;
+  display: block;
+  padding: 10px 20px;
+  background-color: #FF8E19;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  margin: 1rem;
+}
+#nav-button1{
+  background-color: none;
+  display: block;
+  padding: 10px 20px;
+  background-color: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: black;
+  margin: 1rem;
+  
+}
+.hamburger{
+  display: block;
+  padding-top: 40px;
+  padding-right: 25px;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.span{
+ color:#EEAF0B;
+} 
+.recipe{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around; 
+}  
+.recipe-button{
+  background-color: #EED5BA;
+  border: none;
+  border-radius:15px;
+  padding: 7px 15px;
+}
+.card1{
+  background-color: #F1EBE5;
+  margin: 10px;
+}
+.recipe-btn{
+background-color: #FDC124;
+padding: 10px 40px;
+border-radius: 15px;
+border: none;
+font-weight: bolder;
+margin-left: 15px;
+margin-bottom: 15px;
+}
+.card-heading{
+  text-align:center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.recipe-heading, 
+.recipe-paragraph,
+.card-paragraph{
+  text-align: center;
+  padding: 0px 10px;
+}
+.card-paragraph{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.benefit{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card2{
+  background-color: #FCFCF1;
+  margin: 10px 3px;
+}
+.card2__paragraph{
+  padding: 0px 20px;
+}
+.ellipse{
+  width: 25px;
+  height: 25px;
+  padding-top: 5px
+}
+.review__para{
+  background-color:  #EED5BA;
+  margin-bottom: 10px;
+  }
+  .recipe-heading {
+    text-align: center;
+    margin: 20px;
+    font-weight: bold; 
+    font-size: 1.5rem;
+  }
+h4, h2{
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+h1{
+  font-size: 2rem;
+}
+#desktop{
+  display: none;
+}
+@media only screen and (min-width: 768px){
+    #mobile{
+      display: none;
+    }
+  #desktop{
+    display: flex;
+    justify-content: space-between;
+  }  
+  ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #ffffff; 
+          }
+          .desktop > li{
+      text-decoration: none;
+    }
+    #hamburger{
+      display: none;
+    }
+    #header__region{
+      display: flex;
+
+    }
+    #logo{
+      margin: 35px auto;
+      padding-left: 10px;
+    }
+    .hero__section{
+      flex-direction: row-reverse;
+      justify-content:space-around;
+      width: 100%;
+    }
+    .b__image{
+        
+        width: 100%;
+        border-radius:30px;
+        
+      }
+      .hero-image{
+        width: 40%;
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+      }
+      .button__class{
+        display: flex;
+        flex-direction: row;
+              }
+              .hero-image{
+                width: 50%;
+              }
+              .header__item{
+                width: 50%;
+              }
+              
+              .body__image{
+                flex-direction: row;
+                padding: 15px 5px;
+                width: 100%;
+              }
+                        .card1{
+                          width: 33.3%
+                        }
+       .review__section{
+        flex-direction:row ;
+        text-align: center;
+        min-width: 100%;
+
+      }
+      .benefit{
+        flex-direction: row;
+        text-align: center;
+      }
+      .order__heading{
+        text-align: center;
+      }
+      #logo{
+        padding-left: 5rem;
+      }
+      .item__section, .use__directive, .review{
+        margin-top: 5rem;
+      }
+      .card2__paragraph{
+        text-align: center;
+      }
+}

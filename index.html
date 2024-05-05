@@ -1,317 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food delivery Landing Page</title>
-  <link rel="styelesheet" href="style.css">
-  <style>
-    body{
-      background-color: #ffffff;
-    }
-    .header__region{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: none;
-      color: black;
-      align-items: right;
-      width: 100%;
-
-    }
-    #mobile{
-      display: none;
-      flex-direction: row;
-      justify-items: space-between;
-    }
-
-    ul{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background-color: #bce4bc;
-     
-
-    }
-    li{
-      font-family:  sans-serif;
-      font-size: 13px;
-      list-style: none;
-      padding: 15px 20px;
-      align-items: right;
-     
-    }
-    .hero__section{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      padding-top: 10px;
-    }
-    #logo{
-      margin: 35px auto;
-      padding-left: 10px;
-    }
-    .heading__button{
-  display: block;
-  padding: 10px 20px;
-  background-color: #FF8E19;
-  border-radius: 10px;
-  border: none;
-  color: black;
-      }
-      .hero-image{
-        width: 100%;
-      }
-      .heroimage{
-        display: block;
-        height: 200px;
-        padding-left: 40px;
-        margin: 5px auto;
-        overflow-x: hidden;
-       
-
-              }
-              section{
-                width: 100%;
-              }
-      .review__section{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        min-width: 100%;
-
-      }
-
-      .review__heading{
-        text-align: center;
-      }
-      .review__paragraph{
-        width: 100%;
-        align-items: center;
-      }
-      .body__image{
-        display: flex;
-        flex-direction: column;
-        padding: 15px 5px;
-        width: 100%;
-      }
-      .b__image{
-        
-        width: 100%;
-        border-radius:30px;
-        
-      }
-      .review__paragraph{
-      padding-left: 5px;
-      }
-      footer{
-        background-color: #FDC124;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-around;
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        font-size: 15px;
-
-      }
-      .heading__button{
-        display: block;
-  padding: 10px 40px;
-  background-color: #EEAF0B;
-  border-radius: 10px;
-  border: none;
-  color: black;
-  margin: 15px auto; 
-      }
-      .heading-button1{
-        display: block;
-  padding: 10px 30px;
-  background-color:#ffffff;
-  border-radius: 10px;
-  border: 1px solid;
-    color: black;
-  margin: 15px auto;
-      }
-.nav-button{
-  background-color: #FF8E19;
-  padding: 10px 40px;
-  display: block;
-  padding: 10px 20px;
-  background-color: #FF8E19;
-  border-radius: 10px;
-  border: none;
-  color: black;
-}
-#nav-button1{
-  background-color: none;
-  display: block;
-  padding: 10px 20px;
-  background-color: none;
-  border-radius: 10px;
-  border: 1px solid black;
-  color: black;
-  
-}
-.hamburger{
-  display: block;
-  padding-top: 40px;
-  padding-right: 25px;
-  font-weight: bolder;
-  font-size: 2rem;
-}
-.span{
- color:#EEAF0B;
-} 
-.recipe{
- display: flex;
- flex-direction: row;
- justify-content: space-around; 
-}  
-.recipe-button{
-  background-color: #EED5BA;
-  border: none;
-  border-radius:15px;
-  padding: 7px 15px;
-}
-.card1{
-  background-color: #F1EBE5;
-  margin: 10px;
-}
-.recipe-btn{
-background-color: #FDC124;
-padding: 10px 40px;
-border-radius: 15px;
-border: none;
-font-weight: bolder;
-margin-left: 15px;
-margin-bottom: 15px;
-}
-.card-heading{
-  text-align:center;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.recipe-heading, 
-.recipe-paragraph,
-.card-paragraph{
-  text-align: center;
-  padding: 0px 10px;
-}
-.card-paragraph{
-  text-align: center;
-}
-h2{
-  text-align: center;
-}
-
-.benefit{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.card2{
-  background-color: #FCFCF1;
-  margin: 10px 3px;
-}
-.card2__paragraph{
-  padding: 0px 20px;
-}
-.ellipse{
-  width: 25px;
-  height: 25px;
-  padding-top: 5px
-}
-.review__para{
-  background-color:  #EED5BA;
-  margin-bottom: 10px;
-  }
-  .recipe-heading {
-    text-align: center;
-    margin: 20px;
-    font-weight: bold; 
-    font-size: 1.5rem;
-  }
-h4, h2{
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-h1{
-  font-size: 2rem;
-}
-#desktop{
-  display: none;
-}
-@media only screen and (min-width: 768px){
-    #mobile{
-      display: none;
-    }
-  #desktop{
-    display: flex;
-    justify-content: space-between;
-  }  
-  ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      background-color: #ffffff; 
-
-    }
-    #hamburger{
-      display: none;
-    }
-    #header__region{
-      display: flex;
-
-    }
-    #logo{
-      margin: 35px auto;
-      padding-left: 10px;
-    }
-    .hero__section{
-      flex-direction: row-reverse;
-      justify-content:space-around;
-      width: 100%;
-    }
-    .b__image{
-        
-        width: 50%;
-        border-radius:30px;
-        
-      }
-      .hero-image{
-        width: 40%;
-      }
-      .buttons{
-        display: flex;
-        flex-direction: row;
-      }
-      .button__class{
-        display: flex;
-        flex-direction: row;
-              }
-              .hero-image{
-                width: 50%;
-              }
-              .header__item{
-                width: 50%;
-              }
-              .body__image{
-                flex-direction: row;
-                        }
-       .review__section{
-        flex-direction: ;
-        text-align: center;
-        min-width: 100%;
-
-      }
-}
-  </style>
-</head>
+  <link rel="stylesheet" href="style.css">
+  </head>
 <body>
   <!--Cloud-->
 
@@ -324,8 +18,8 @@ h1{
         <li><a href="ContactUs.html">Contact Us</a></li>
         <li><a href="Services.html">Services</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><button class="nav-button">Login</button></li>
-        <li><button id="nav-button1">Sign-up</button></li>
+        <button class="nav-button">Login</button>
+        <button id="nav-button1">Sign-up</button>
       </ul>
       </nav>
       <nav id="desktop">
@@ -356,35 +50,43 @@ h1{
     </div>      
       </div>      
 </section>
-              <section>
+              
+<section class="item__section">
           <h1 class="recipe-heading">Our Popular Recipes</h1>
           <p class="recipe-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
           <div class="body__image">
-            <div class="card1">
-            <div><img src="images/Image2.jpeg" class="b__image"></div>
-            <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
+          <div class="card1">
+          <div><img src="images/Image2.jpeg" class="b__image"></div>
+          <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
               <h4 class="card-heading">Okro Soup and Ogbono</h4>
-              <p class="card-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+              <p class="recipe-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
               <button class="recipe-btn">Order Now</button>
                 </div>
-                <div class="card1">
+              
+                
+          <div class="card1">
                   <div><img src="images/Image2.jpeg" class="b__image"></div>
                   <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
                     <h4 class="card-heading">African Chicken Veggies</h4>
-                    <p>You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+                    <p class="recipe-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
                     <button class="recipe-btn">Order Now</button>
-                      </div>
-                      <div class="card1">
-          <img src="images/image5.jpeg" class="b__image">
+          </div>
+          
+          <div class="card1">
+          <div><img src="images/image5.jpeg" class="b__image"></div>
           <div class="recipe"><button class="recipe-button">View Recipe</button><p>#2000</p></div>
           <h4 class="card-heading">Pepperroni bayamata</h4>
-          <p>You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
+          <p class="recipe-paragraph">You can choose the  dishes  that suites your taste and your budget for a good taste and healthier feeling.</p>
           <button class="recipe-btn">Order Now</button>
         </div>
+      </div>
+    </section>
 
+    <section class="use__directive">
+      
         <div>
-          <h2>Order delivery in just <br>30 minutes</h2>
-          <p class="card2__paragraph">We deliver delicacies withing the shortest possible time. What are your waiting for. place your order now</p>
+          <h4 class="order__heading">Order delivery in just <br>30 minutes</h2>
+          <p class="card2__paragraph">We deliver delicacies within the shortest possible time. What are your waiting for. place your order now</p>
           <div class="benefit">
           <div class="card2">
             <img src="images/Ellipse 12.png" class="ellipse">
@@ -405,7 +107,7 @@ h1{
               </div>
         </div>
         </div>
-         </div>
+        </section>
           
           </section>                
         <section class="review">
